@@ -3,6 +3,7 @@ public class Solution {
     /*
     Naive solution: Brute-force check whether every substring 1.) is longer than the current longest palindrome and, 2.) is a palindrome.
         - Time complexity: O(n^3)
+            - O(n^2) to generate all substrings, O(n) to check each substring.
         - Space complexity: O(1)
      */
 

@@ -14,7 +14,6 @@ public class Solution {
         Runtime: Your runtime beats 34.42% of java submissions.
         */
 
-
         int[] ret = new int[2];
         boolean found = false;
 
