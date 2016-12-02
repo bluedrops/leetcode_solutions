@@ -25,14 +25,15 @@ public class Solution {
     }
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+
+        if(l1 == null) return l2;
+        if(l2 == null) return l1;
+
         ListNode head = new ListNode(-1);
         ListNode curr = head;
 
         /* Cap the size of the priority queue at 2. */
         PriorityQueue<ListNode> pq = new PriorityQueue<ListNode>(2, new ListNodeComparator());
-
-        if(l1 != null) pq.offer(l1);
-        if(l2 != null) pq.offer(l2);
 
         while(!pq.isEmpty()) {
             ListNode nextNode = pq.poll();
